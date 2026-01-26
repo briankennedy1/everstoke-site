@@ -59,20 +59,19 @@ main {
 
 .hero img {
     width: 100%;
-    max-width: 600px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
 }
 
 .hero p {
     margin-bottom: 15px;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
