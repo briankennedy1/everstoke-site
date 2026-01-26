@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap');
 
-body, p, li {
+body, p, li, span, div {
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', 'Arial Narrow', sans-serif !important;
+}
+
+/* Buttons */
+a.sqs-block-button-element,
+.sqs-block-button-element,
+.header-actions-action,
+button,
+.sqs-modal-lightbox-content a,
+[data-button-type] {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Mobile menu */
+.header-menu-nav-item a,
+.header-menu-nav-folder-title,
+.header-menu-nav-wrapper,
+.header--menu-open .header-menu-nav-item,
+nav a {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
