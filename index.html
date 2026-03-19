@@ -125,7 +125,12 @@
 
         <section class="cta">
             <h3>Get in touch to meet the team,<br>ride the trails and decide on membership.</h3>
-            <a href="mailto:briankennedy1@gmail.com" class="button">Contact</a>
+            <div class="contact-actions">
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=briankennedy1@gmail.com" class="button" target="_blank" rel="noopener">Open Gmail</a>
+                <button type="button" class="button button-secondary copy-email-button" data-email="briankennedy1@gmail.com">Copy Email</button>
+            </div>
+            <p class="contact-email">briankennedy1@gmail.com</p>
+            <p class="contact-status" aria-live="polite"></p>
         </section>
 
         <section class="goals">
@@ -159,5 +164,23 @@
         <h3>Everstoke</h3>
         <p>67317 CA-70<br>Blairsden, CA 96103</p>
     </footer>
+
+    <script>
+        const copyButton = document.querySelector('.copy-email-button');
+        const status = document.querySelector('.contact-status');
+
+        if (copyButton && status) {
+            copyButton.addEventListener('click', async () => {
+                const email = copyButton.dataset.email;
+
+                try {
+                    await navigator.clipboard.writeText(email);
+                    status.textContent = 'Email address copied.';
+                } catch (error) {
+                    status.textContent = 'Copy failed. Use the address shown below.';
+                }
+            });
+        }
+    </script>
 </body>
 </html>

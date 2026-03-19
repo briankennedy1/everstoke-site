@@ -168,9 +168,41 @@ main {
     text-decoration: none;
     border-radius: 4px;
     font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 .button:hover { background: #555; }
+
+.button-secondary {
+    background: transparent;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.button-secondary:hover {
+    background: #333;
+    color: white;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.contact-email {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.contact-status {
+    min-height: 1.6em;
+    margin-top: 8px;
+    color: #2d5016;
+}
 
 /* Goals */
 .goals {
