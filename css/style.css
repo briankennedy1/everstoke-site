@@ -157,7 +157,12 @@ main {
 
 .cta h3 {
     font-size: 1.5em;
+    line-height: 1.35;
     margin-bottom: 20px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: balance;
 }
 
 .button {
