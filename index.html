@@ -168,8 +168,7 @@
             <p>We appreciate your interest, but if you're not contacting us about a yearly membership we won't be able to help you.</p>
             <p><strong>If you're thinking about a yearly membership we would love to give you a tour!</strong></p>
             <div class="contact-modal__actions">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7CHN2m8MtZYjCCEbHvhwl1M4eMPBb4FM1vhRa4easo-5mBw/viewform?usp=header" class="contact-modal__continue" target="_blank" rel="noopener">Yes, I'm interested in a yearly membership</a>
-                <button class="contact-modal__cancel" type="button">Never mind</button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7CHN2m8MtZYjCCEbHvhwl1M4eMPBb4FM1vhRa4easo-5mBw/viewform?usp=header" class="contact-modal__continue" target="_blank" rel="noopener">Contact</a>
             </div>
         </div>
     </dialog>
@@ -177,7 +176,7 @@
     <script>
         const contactButton = document.querySelector('#contact-button');
         const contactModal = document.querySelector('#contact-modal');
-        const modalCloseButtons = contactModal.querySelectorAll('.contact-modal__close, .contact-modal__cancel');
+        const modalCloseButtons = contactModal.querySelectorAll('.contact-modal__close');
 
         contactButton.addEventListener('click', (event) => {
             if (typeof contactModal.showModal !== 'function') return;
